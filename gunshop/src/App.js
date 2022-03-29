@@ -21,7 +21,7 @@ function App() {
   };
 
   const handleDelete = (event, deletedWeapon) => {
-    axios.delete("https://tjgs-backend.herokuapp.com" + deletedWeapon.id).then((response) => {
+    axios.delete("https://tjgs-backend.herokuapp.com/" + deletedWeapon.id).then((response) => {
       setGuns(guns.filter((x) => x.id !== deletedWeapon.id));
     });
   };
