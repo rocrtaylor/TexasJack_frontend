@@ -21,14 +21,14 @@ function App() {
   };
 
   const handleDelete = (event, deletedWeapon) => {
-    axios.delete("https://tjgs-backend.herokuapp.com/" + deletedWeapon.id).then((response) => {
+    axios.delete("https://tjgs-backend.herokuapp.com/api/guns/" + deletedWeapon.id).then((response) => {
       setGuns(guns.filter((x) => x.id !== deletedWeapon.id));
     });
   };
 
   const handleUpdate = (editWeapon, id) => {
     console.log(editWeapon);
-    axios.put("https://tjgs-backend.herokuapp.com/" + id, editWeapon).then((response) => {
+    axios.put("https://tjgs-backend.herokuapp.com/api/guns/" + id, editWeapon).then((response) => {
       setGuns(
         guns.map((gun) => {
           return gun.id !== editWeapon.id ? gun : response.data;
