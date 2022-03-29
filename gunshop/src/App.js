@@ -7,28 +7,28 @@ function App() {
   const [guns, setGuns] = useState([]);
 
   const getGuns = () => {
-    axios.get("http://localhost:8000/api/guns").then(
+    axios.get("https://tjgs-backend.herokuapp.com").then(
       (response) => setGuns(response.data),
       (error) => console.error(error)
     );
   };
 
   const handleCreate = (addWeapon) => {
-    axios.post("http://localhost:8000/api/guns", addWeapon).then((response) => {
+    axios.post("https://tjgs-backend.herokuapp.com/", addWeapon).then((response) => {
       console.log(response);
       setGuns([...guns, response.data]);
     });
   };
 
   const handleDelete = (event, deletedWeapon) => {
-    axios.delete("http://localhost:8000/api/guns/" + deletedWeapon.id).then((response) => {
+    axios.delete("https://tjgs-backend.herokuapp.com/" + deletedWeapon.id).then((response) => {
       setGuns(guns.filter((x) => x.id !== deletedWeapon.id));
     });
   };
 
   const handleUpdate = (editWeapon, id) => {
     console.log(editWeapon);
-    axios.put("http://localhost:8000/api/guns/" + id, editWeapon).then((response) => {
+    axios.put("https://tjgs-backend.herokuapp.com/" + id, editWeapon).then((response) => {
       setGuns(
         guns.map((gun) => {
           return gun.id !== editWeapon.id ? gun : response.data;
