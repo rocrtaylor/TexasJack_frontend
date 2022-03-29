@@ -7,7 +7,7 @@ function App() {
   const [guns, setGuns] = useState([]);
 
   const getGuns = () => {
-    axios.get("https://tjgs-backend.herokuapp.com").then(
+    axios.get("https://tjgs-backend.herokuapp.com/").then(
       (response) => setGuns(response.data),
       (error) => console.error(error)
     );
