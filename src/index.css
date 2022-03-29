@@ -16,7 +16,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: url("../img/stars.png");
+  background-image: url("./img/stars.png");
   background-size: cover;
   background-position: top;
   position: relative;
