@@ -11,12 +11,12 @@ body {
   line-height: 1.7;
   color: #777;
 
-  background-color: blue;
+  background-color: rgb(18, 20, 109);
 }
 
 .header {
   height: 100vh;
-  background-image: url("./img/stars.png");
+  background-image: url("../img/stars.png");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -25,9 +25,13 @@ body {
 
 .text-box {
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.lowbox {
+  display: flex;
+  justify-content: center;
 }
 
 .heading-primary {
@@ -41,14 +45,65 @@ body {
   font-size: 100px;
   font-weight: 900;
   letter-spacing: 35px;
+
+  animation-name: moveIn;
+  animation-duration: 3s;
 }
 
 .heading-primary-sub {
-  display: block;
+  display: inline-block;
   color: blue;
-  font-size: 70px;
-  font-weight: 900;
+  font-size: 80px;
+  font-weight: bold;
   letter-spacing: 50px;
-  text-align: center;
-  -webkit-text-stroke: 3px black;
+  animation-name: inLeft;
+  animation-duration: 3s;
+
+  -webkit-text-stroke: 4px yellow;
+}
+
+.heading-primary-sub2 {
+  display: inline-block;
+  color: blue;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 50px;
+  animation-name: inRight;
+  animation-duration: 3s;
+
+  -webkit-text-stroke: 4px yellow;
+}
+
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+    transform: scale(70);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes inLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes inRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

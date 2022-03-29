@@ -47,7 +47,10 @@ function App() {
         <div class="text-box">
           <div class="heading-primary">
             <span class="heading-primary-main">Texas_Jack's</span>
-            <span class="heading-primary-sub">Gun Shack</span>
+            <span class="lowbox">
+              <span class="heading-primary-sub">Gun</span>
+              <span class="heading-primary-sub2">Shack</span>
+            </span>
           </div>
         </div>
       </header>
