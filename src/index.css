@@ -31,13 +31,13 @@ body {
 }
 
 .heading-primary {
-  color: orangered;
   text-transform: uppercase;
-  text-shadow: -7px 7px yellow;
 }
 
 .heading-primary-main {
   display: inline-block;
+  color: orangered;
+  text-shadow: -7px 7px yellow;
   font-size: 100px;
   font-weight: 900;
   letter-spacing: 35px;
@@ -45,8 +45,10 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 40px;
+  color: blue;
+  font-size: 70px;
   font-weight: 900;
   letter-spacing: 50px;
   text-align: center;
+  -webkit-text-stroke: 3px black;
 }
