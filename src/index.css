@@ -1,3 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: gray;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+
+  background-color: blue;
+}
+
+.header {
+  height: 100vh;
+  background-image: url("../img/stars.png");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 98% 79%, 97% 79%, 95% 80%, 87% 85%, 76% 98%, 75% 98%, 70% 99%, 0 100%);
+}
+
+.text-box {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: orangered;
+  text-transform: uppercase;
+  text-shadow: -7px 7px yellow;
+}
+
+.heading-primary-main {
+  display: inline-block;
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 50px;
+  text-align: center;
 }

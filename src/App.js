@@ -43,7 +43,14 @@ function App() {
 
   return (
     <>
-      <h1>Texas Jacks Gun Shack</h1>
+      <header class="header">
+        <div class="text-box">
+          <div class="heading-primary">
+            <span class="heading-primary-main">Texas_Jack's</span>
+            <span class="heading-primary-sub">Gun Shack</span>
+          </div>
+        </div>
+      </header>
       <Add handleCreate={handleCreate} />
       <br />
       <div>Hello Guns</div>
