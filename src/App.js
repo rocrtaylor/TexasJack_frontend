@@ -42,7 +42,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="back">
       <header class="header">
         <div class="text-box">
           <div class="heading-primary">
@@ -71,7 +71,7 @@ function App() {
           </div>
         );
       })}
-    </>
+    </div>
   );
 }
 /////////player test///

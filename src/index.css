@@ -22,10 +22,11 @@ body {
   width: 100vw;
 }
 .header {
+  display: flex;
+  justify-content: center;
   height: 100vh;
   background-image: url("./img/stars.png");
   background-size: cover;
-  background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 98% 79%, 97% 79%, 95% 80%, 87% 85%, 76% 98%, 75% 98%, 70% 99%, 0 100%);
 }
