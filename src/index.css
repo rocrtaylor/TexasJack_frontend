@@ -82,7 +82,7 @@ body {
   -webkit-text-stroke: 4px rgb(13, 196, 13);
 }
 
-/* @keyframes moveIn {
+@keyframes moveIn {
   0% {
     opacity: 0;
     transform: scale(70);
@@ -114,4 +114,4 @@ body {
     opacity: 1;
     transform: translate(0);
   }
-} */
+}
