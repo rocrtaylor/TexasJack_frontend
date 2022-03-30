@@ -14,7 +14,7 @@ body {
   background-color: rgb(18, 20, 109);
 }
 .back {
-  background-image: linear-gradient(rgba(27, 82, 140, 0.76), rgba(27, 82, 140, 0.774)), url("/img/W3tra4F.gif");
+  background-image: linear-gradient(rgba(27, 82, 140, 0.76), rgba(27, 82, 140, 0.774)), url("img/W3tra4F.gif");
   background-size: cover;
   top: 0;
   left: 0;
