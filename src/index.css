@@ -13,7 +13,14 @@ body {
 
   background-color: rgb(18, 20, 109);
 }
-
+.back {
+  background-image: linear-gradient(rgba(27, 82, 140, 0.76), rgba(27, 82, 140, 0.774)), url("/img/W3tra4F.gif");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+}
 .header {
   height: 100vh;
   background-image: url("./img/stars.png");
@@ -41,7 +48,7 @@ body {
 .heading-primary-main {
   display: inline-block;
   color: orangered;
-  text-shadow: -7px 7px yellow;
+  text-shadow: -7px 7px rgb(13, 196, 13);
   font-size: 100px;
   font-weight: 900;
   letter-spacing: 35px;
@@ -52,29 +59,29 @@ body {
 
 .heading-primary-sub {
   display: inline-block;
-  color: blue;
+  color: orangered;
   font-size: 80px;
   font-weight: bold;
   letter-spacing: 50px;
   animation-name: inLeft;
   animation-duration: 3s;
 
-  -webkit-text-stroke: 4px yellow;
+  -webkit-text-stroke: 4px rgb(13, 196, 13);
 }
 
 .heading-primary-sub2 {
   display: inline-block;
-  color: blue;
+  color: orangered;
   font-size: 80px;
   font-weight: bold;
   letter-spacing: 50px;
   animation-name: inRight;
   animation-duration: 3s;
 
-  -webkit-text-stroke: 4px yellow;
+  -webkit-text-stroke: 4px rgb(13, 196, 13);
 }
 
-@keyframes moveIn {
+/* @keyframes moveIn {
   0% {
     opacity: 0;
     transform: scale(70);
@@ -106,4 +113,4 @@ body {
     opacity: 1;
     transform: translate(0);
   }
-}
+} */
