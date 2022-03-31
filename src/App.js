@@ -4,8 +4,6 @@ import Add from "./components/Add";
 import Edit from "./components/Edit";
 import ReactPlayer from "react-player/lazy";
 
-
-
 function App() {
   const [guns, setGuns] = useState([]);
 
@@ -48,13 +46,14 @@ function App() {
     <div className="back">
       <header class="header">
         {/* <ReactPlayer url="https://youtu.be/Bm9YvhBUmc4?t=8" width="100%" height="100%" /> */}
-        
-        <div class="text-box">
-          <div class="heading-primary">
-            <span class="heading-primary-main">Texas_Jack's</span>
-            <span class="lowbox">
-              <span class="heading-primary-sub">Gun</span>
-              <span class="heading-primary-sub2">Shack</span>
+
+        <div className="text-box">
+          <div className="heading-primary">
+            <span className="heading-primary-main">Texas_Jack's</span>
+            <span className="lowbox">
+              <span className="heading-primary-sub">Gun</span>
+              <span className="heading-primary-space">_</span>
+              <span className="heading-primary-sub2">Shack</span>
             </span>
           </div>
         </div>

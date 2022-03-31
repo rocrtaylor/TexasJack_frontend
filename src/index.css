@@ -71,6 +71,18 @@ body {
 
   -webkit-text-stroke: 4px rgb(13, 196, 13);
 }
+.heading-primary-space {
+  display: inline-block;
+  color: orangered;
+  text-shadow: -7px 7px orangered;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 50px;
+  animation-name: inUp;
+  animation-duration: 3s;
+
+  -webkit-text-stroke: 4px rgb(13, 196, 13);
+}
 
 .heading-primary-sub2 {
   display: inline-block;
@@ -111,6 +123,16 @@ body {
   0% {
     opacity: 0;
     transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes inUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px);
   }
   100% {
     opacity: 1;
