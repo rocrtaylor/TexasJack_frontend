@@ -107,6 +107,10 @@ body {
   animation-duration: 5s;
 }
 
+video {
+  z-index: 2;
+}
+
 @keyframes jackMove {
   0% {
     opacity: 0;
