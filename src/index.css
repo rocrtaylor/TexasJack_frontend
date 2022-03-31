@@ -96,6 +96,30 @@ body {
   -webkit-text-stroke: 4px rgb(13, 196, 13);
 }
 
+.jack {
+  background-image: url("img/jack_ccexpress.png");
+  width: 810px;
+  height: 500px;
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  animation-name: jackMove;
+  animation-duration: 5s;
+}
+
+@keyframes jackMove {
+  0% {
+    opacity: 0.1;
+    transform: translateX(-400px);
+    height: 200px;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes moveIn {
   0% {
     opacity: 0;
