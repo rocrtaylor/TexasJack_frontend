@@ -47,6 +47,11 @@ function App() {
       <header className="header">
         {/* <ReactPlayer url="https://youtu.be/Bm9YvhBUmc4?t=8" width="100%" height="100%" /> */}
 
+        {/* <video controls autoplay loop width="100%">
+          <source src="/video/stars15M.mp4?autoplay=10" type="video/mp4" />
+          Your browser does not support the video tag
+        </video> */}
+
         <div className="text-box">
           <div className="heading-primary">
             <span className="heading-primary-main">Texas_Jack's</span>
@@ -59,9 +64,57 @@ function App() {
         </div>
         <div className="jack"></div>
       </header>
-      <Add handleCreate={handleCreate} />
+      {/* input tombstone */}
+      <div className="flex justify-center mt-10">
+        <div className="flex-col tombstone text-slate-900">
+          <div className="flex-col items-center">
+            <div className="flex justify-center ">
+              <h3 className="pb-10 text-2xl font-semibold">Build Request</h3>
+            </div>
+
+            <Add handleCreate={handleCreate} />
+          </div>
+        </div>
+      </div>
+      {/* input tombstone */}
       <br />
-      <div>Hello Guns</div>
+      <div className="text-3xl">Hello Guns</div>
+      <div className="flex justify-around  ">
+        {/* tombstone */}
+        <div className="flex justify-center mt-10">
+          <div className="flex-col tombstone ">
+            <div className="flex-col items-center text-amber-900">
+              <div className="flex justify-center ">
+                <h3 className=" justify-center pb-4 text-2xl font-semibold ">Western</h3>
+              </div>
+              <div>
+                <h2> Make: Clint, John</h2>
+                <h3> Model: Easy, Cowboy</h3>
+                <h3> Caliber: .44, .45</h3>
+                <h3> Price: $979.00</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* tombstone */}
+        {/* tombstone */}
+        <div className="flex justify-center mt-10">
+          <div className="flex-col tombstone ">
+            <div className="flex-col items-center text-amber-900">
+              <div className="flex justify-center ">
+                <h3 className=" justify-center pb-4 text-2xl font-semibold ">Western</h3>
+              </div>
+              <div>
+                <h2> Make: Clint, John</h2>
+                <h3> Model: Easy, Cowboy</h3>
+                <h3> Caliber: .44, .45</h3>
+                <h3> Price: $979.00</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* tombstone */}
+      </div>
       {guns.map((gun) => {
         return (
           <div key={gun.id}>
@@ -76,14 +129,8 @@ function App() {
           </div>
         );
       })}
-      <h2>Should be a video below this</h2>
-      <video loop autoPlay>
-        <source src="./img/video.mp4" type="video/mp4" width="500px" height="500px" />
-        Your browser does not support the video tag
-      </video>
     </div>
   );
 }
-/////////player test///
 
 export default App;

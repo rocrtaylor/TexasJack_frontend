@@ -1,8 +1,12 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   font-family: "Lato", sans-serif;
@@ -105,10 +109,16 @@ body {
   left: 1px;
   animation-name: jackMove;
   animation-duration: 5s;
+  backface-visibility: hidden;
 }
 
-video {
-  z-index: 2;
+.tombstone {
+  background-color: #777;
+  background-image: url("img/tomb.png");
+  padding: 1rem;
+  padding-top: 3.5rem;
+  border-radius: 50% 50% 5% 5%;
+  letter-spacing: 0.3rem;
 }
 
 @keyframes jackMove {
