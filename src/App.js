@@ -91,16 +91,16 @@ function App() {
                 </div>
                 <div>
                   <h2> Make: Doc </h2>
-                  <h3> Model: Gun Slinger</h3>
+                  <h3> Model: Gun Slinger 3.5"</h3>
                   <h3> Caliber: .45</h3>
-                  <h3> Price: $1179.00</h3>
+                  <h3> Price: $1299.00</h3>
                 </div>
               </div>
             </div>
           </div>
           {/* tombstone */}
           {/* tombstone */}
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center mt-10 rotate-12">
             <div className="flex-col tombstone ">
               <div className="flex-col items-center text-amber-900">
                 <div className="flex justify-center ">
@@ -108,9 +108,9 @@ function App() {
                 </div>
                 <div>
                   <h2> Make: Wyatt</h2>
-                  <h3> Model: Cowboy</h3>
+                  <h3> Model: Cowboy 6"</h3>
                   <h3> Caliber: .45</h3>
-                  <h3> Price: $979.00</h3>
+                  <h3> Price: $2995.00</h3>
                 </div>
               </div>
             </div>
@@ -120,10 +120,10 @@ function App() {
       </section>
       {/* section1 */}
       {/* section2 */}
-      <section>
+      <section className="mt-14">
         <div className="flex justify-around  ">
           {/* tombstone */}
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center mt-10 -rotate-6">
             <div className="flex-col tombstone ">
               <div className="flex-col items-center text-stone-800">
                 <div className="flex justify-center ">
@@ -131,9 +131,9 @@ function App() {
                 </div>
                 <div>
                   <h2> Make: Clint </h2>
-                  <h3> Model: Law</h3>
+                  <h3> Model: The Law</h3>
                   <h3> Caliber: .44</h3>
-                  <h3> Price: $1079.00</h3>
+                  <h3> Price: $1229.00</h3>
                 </div>
               </div>
             </div>
@@ -142,15 +142,15 @@ function App() {
           {/* tombstone */}
           <div className="flex justify-center mt-10">
             <div className="flex-col tombstone ">
-              <div className="flex-col items-center text-amber-900">
+              <div className="flex-col items-center text-stone-800">
                 <div className="flex justify-center ">
-                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Western</h3>
+                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Pistol</h3>
                 </div>
                 <div>
-                  <h2> Make: John</h2>
-                  <h3> Model: Cowboy</h3>
+                  <h2> Make: John Wick</h2>
+                  <h3> Model: P220</h3>
                   <h3> Caliber:.45</h3>
-                  <h3> Price: $979.00</h3>
+                  <h3> Price: $1319.00</h3>
                 </div>
               </div>
             </div>
@@ -159,15 +159,15 @@ function App() {
           {/* tombstone */}
           <div className="flex justify-center mt-10">
             <div className="flex-col tombstone ">
-              <div className="flex-col items-center text-amber-900">
+              <div className="flex-col items-center text-emerald-900">
                 <div className="flex justify-center ">
-                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Western</h3>
+                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Pistol</h3>
                 </div>
                 <div>
-                  <h2> Make: John</h2>
-                  <h3> Model: Cowboy</h3>
-                  <h3> Caliber: .44, .45</h3>
-                  <h3> Price: $979.00</h3>
+                  <h2> Make: R Lee</h2>
+                  <h3> Model: Colt GI </h3>
+                  <h3> Caliber: 45 ACP</h3>
+                  <h3> Price: $1299.00</h3>
                 </div>
               </div>
             </div>
@@ -176,6 +176,46 @@ function App() {
         </div>
       </section>
       {/* section2 */}
+      {/* section3 */}
+      <section className="">
+        <div className="flex justify-around  ">
+          {/* tombstone */}
+          <div className="flex justify-center mt-10">
+            <div className="flex-col tombstone ">
+              <div className="flex-col items-center text-red-600">
+                <div className="flex justify-center">
+                  <h3 className="pb-4 text-2xl font-semibold ">Lester Moore</h3>
+                </div>
+                <div className="text-center">
+                  <h2 className="text-black"> Died 3 shots </h2>
+                  <h3 className="text-black"> From a 44</h3>
+                  <h3 className="text-black"> No Less</h3>
+                  <h3 className="text-black"> No Moore</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* tombstone */}
+          {/* tombstone */}
+          <div className="flex justify-center mt-10">
+            <div className="flex-col tombstone ">
+              <div className="flex-col items-center text-pink-400">
+                <div className="flex justify-center ">
+                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Bye - Bye</h3>
+                </div>
+                <div>
+                  <h2> Make: Zazzy Cat</h2>
+                  <h3> Model: Sshhh"</h3>
+                  <h3> Caliber: .416</h3>
+                  <h3> Price: $7000.00</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* tombstone */}
+        </div>
+      </section>
+      {/* section3 */}
       {guns.map((gun) => {
         return (
           <div key={gun.id}>
