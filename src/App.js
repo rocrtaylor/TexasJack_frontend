@@ -78,7 +78,7 @@ function App() {
       </div>
       {/* input tombstone */}
       <br />
-      <div className="text-3xl">Hello Guns</div>
+
       {/* section 1 */}
       <section className="">
         <div className="flex justify-around  ">
@@ -216,20 +216,26 @@ function App() {
         </div>
       </section>
       {/* section3 */}
-      {guns.map((gun) => {
-        return (
-          <div key={gun.id}>
-            <h2> Make: {gun.make}</h2>
-            <h3> Model: {gun.model}</h3>
-            <h3> Caliber: {gun.caliber}</h3>
-            <h3> Price: ${gun.price}</h3>
-            <Edit handleUpdate={handleUpdate} gun={gun} />
-            <button onClick={(event) => handleDelete(event, gun)} value={gun.id}>
-              X
-            </button>
-          </div>
-        );
-      })}
+      <section className="ml-10 mt-16">
+        <div className="flex">
+          {guns.map((gun) => {
+            return (
+              <div className="m-10 tombstone flex-col text-center text-black">
+                <div key={gun.id}>
+                  <h2> Make: {gun.make}</h2>
+                  <h3> Model: {gun.model}</h3>
+                  <h3> Caliber: {gun.caliber}</h3>
+                  <h3> Price: ${gun.price}</h3>
+                  <Edit handleUpdate={handleUpdate} gun={gun} />
+                  <button onClick={(event) => handleDelete(event, gun)} value={gun.id} className="text-red-900">
+                    X
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </div>
   );
 }
