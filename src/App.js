@@ -47,10 +47,10 @@ function App() {
       <header className="header">
         {/* <ReactPlayer url="https://youtu.be/Bm9YvhBUmc4?t=8" width="100%" height="100%" /> */}
 
-        {/* <video controls autoplay loop width="100%">
+        <video controls autoplay loop width="100%">
           <source src="/video/stars15M.mp4?autoplay=10" type="video/mp4" />
           Your browser does not support the video tag
-        </video> */}
+        </video>
 
         <div className="text-box">
           <div className="heading-primary">
