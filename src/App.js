@@ -79,42 +79,103 @@ function App() {
       {/* input tombstone */}
       <br />
       <div className="text-3xl">Hello Guns</div>
-      <div className="flex justify-around  ">
-        {/* tombstone */}
-        <div className="flex justify-center mt-10">
-          <div className="flex-col tombstone ">
-            <div className="flex-col items-center text-amber-900">
-              <div className="flex justify-center ">
-                <h3 className=" justify-center pb-4 text-2xl font-semibold ">Western</h3>
-              </div>
-              <div>
-                <h2> Make: Clint, John</h2>
-                <h3> Model: Easy, Cowboy</h3>
-                <h3> Caliber: .44, .45</h3>
-                <h3> Price: $979.00</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* tombstone */}
-        {/* tombstone */}
-        <div className="flex justify-center mt-10">
-          <div className="flex-col tombstone ">
-            <div className="flex-col items-center text-amber-900">
-              <div className="flex justify-center ">
-                <h3 className=" justify-center pb-4 text-2xl font-semibold ">Western</h3>
-              </div>
-              <div>
-                <h2> Make: Clint, John</h2>
-                <h3> Model: Easy, Cowboy</h3>
-                <h3> Caliber: .44, .45</h3>
-                <h3> Price: $979.00</h3>
+      {/* section 1 */}
+      <section className="">
+        <div className="flex justify-around  ">
+          {/* tombstone */}
+          <div className="flex justify-center mt-10">
+            <div className="flex-col tombstone ">
+              <div className="flex-col items-center text-amber-900">
+                <div className="flex justify-center">
+                  <h3 className="pb-4 text-2xl font-semibold ">Western</h3>
+                </div>
+                <div>
+                  <h2> Make: Doc </h2>
+                  <h3> Model: Gun Slinger</h3>
+                  <h3> Caliber: .45</h3>
+                  <h3> Price: $1179.00</h3>
+                </div>
               </div>
             </div>
           </div>
+          {/* tombstone */}
+          {/* tombstone */}
+          <div className="flex justify-center mt-10">
+            <div className="flex-col tombstone ">
+              <div className="flex-col items-center text-amber-900">
+                <div className="flex justify-center ">
+                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Western</h3>
+                </div>
+                <div>
+                  <h2> Make: Wyatt</h2>
+                  <h3> Model: Cowboy</h3>
+                  <h3> Caliber: .45</h3>
+                  <h3> Price: $979.00</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* tombstone */}
         </div>
-        {/* tombstone */}
-      </div>
+      </section>
+      {/* section1 */}
+      {/* section2 */}
+      <section>
+        <div className="flex justify-around  ">
+          {/* tombstone */}
+          <div className="flex justify-center mt-10">
+            <div className="flex-col tombstone ">
+              <div className="flex-col items-center text-stone-800">
+                <div className="flex justify-center ">
+                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Revolver</h3>
+                </div>
+                <div>
+                  <h2> Make: Clint </h2>
+                  <h3> Model: Law</h3>
+                  <h3> Caliber: .44</h3>
+                  <h3> Price: $1079.00</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* tombstone */}
+          {/* tombstone */}
+          <div className="flex justify-center mt-10">
+            <div className="flex-col tombstone ">
+              <div className="flex-col items-center text-amber-900">
+                <div className="flex justify-center ">
+                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Western</h3>
+                </div>
+                <div>
+                  <h2> Make: John</h2>
+                  <h3> Model: Cowboy</h3>
+                  <h3> Caliber:.45</h3>
+                  <h3> Price: $979.00</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* tombstone */}
+          {/* tombstone */}
+          <div className="flex justify-center mt-10">
+            <div className="flex-col tombstone ">
+              <div className="flex-col items-center text-amber-900">
+                <div className="flex justify-center ">
+                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Western</h3>
+                </div>
+                <div>
+                  <h2> Make: John</h2>
+                  <h3> Model: Cowboy</h3>
+                  <h3> Caliber: .44, .45</h3>
+                  <h3> Price: $979.00</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* tombstone */}
+        </div>
+      </section>
+      {/* section2 */}
       {guns.map((gun) => {
         return (
           <div key={gun.id}>

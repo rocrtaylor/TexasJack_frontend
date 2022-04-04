@@ -124,6 +124,7 @@ body {
   padding-top: 3.5rem;
   border-radius: 50% 50% 5% 5%;
   letter-spacing: 0.3rem;
+  drop-shadow: 15px 15px 10px black;
 }
 
 @keyframes jackMove {
