@@ -15,27 +15,33 @@ function App() {
   };
 
   const handleCreate = (addWeapon) => {
-    axios.post("https://tjgs-backend.herokuapp.com/", addWeapon).then((response) => {
-      console.log(response);
-      setGuns([...guns, response.data]);
-    });
+    axios
+      .post("https://tjgs-backend.herokuapp.com/", addWeapon)
+      .then((response) => {
+        console.log(response);
+        setGuns([...guns, response.data]);
+      });
   };
 
   const handleDelete = (event, deletedWeapon) => {
-    axios.delete("https://tjgs-backend.herokuapp.com/api/guns/" + deletedWeapon.id).then((response) => {
-      setGuns(guns.filter((x) => x.id !== deletedWeapon.id));
-    });
+    axios
+      .delete("https://tjgs-backend.herokuapp.com/api/guns/" + deletedWeapon.id)
+      .then((response) => {
+        setGuns(guns.filter((x) => x.id !== deletedWeapon.id));
+      });
   };
 
   const handleUpdate = (editWeapon, id) => {
     console.log(editWeapon);
-    axios.put("https://tjgs-backend.herokuapp.com/api/guns/" + id, editWeapon).then((response) => {
-      setGuns(
-        guns.map((gun) => {
-          return gun.id !== editWeapon.id ? gun : response.data;
-        })
-      );
-    });
+    axios
+      .put("https://tjgs-backend.herokuapp.com/api/guns/" + id, editWeapon)
+      .then((response) => {
+        setGuns(
+          guns.map((gun) => {
+            return gun.id !== editWeapon.id ? gun : response.data;
+          })
+        );
+      });
   };
 
   useEffect(() => {
@@ -47,10 +53,10 @@ function App() {
       <header className="header">
         {/* <ReactPlayer url="https://youtu.be/Bm9YvhBUmc4?t=8" width="100%" height="100%" /> */}
 
-        <video controls autoplay loop width="100%">
+        {/* <video controls autoplay loop width="100%">
           <source src="/video/stars15M.mp4?autoplay=10" type="video/mp4" />
           Your browser does not support the video tag
-        </video>
+        </video> */}
 
         <div className="text-box">
           <div className="heading-primary">
@@ -104,7 +110,9 @@ function App() {
             <div className="flex-col tombstone ">
               <div className="flex-col items-center text-amber-900">
                 <div className="flex justify-center ">
-                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Western</h3>
+                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">
+                    Western
+                  </h3>
                 </div>
                 <div>
                   <h2> Make: Wyatt</h2>
@@ -127,7 +135,9 @@ function App() {
             <div className="flex-col tombstone ">
               <div className="flex-col items-center text-stone-800">
                 <div className="flex justify-center ">
-                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Revolver</h3>
+                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">
+                    Revolver
+                  </h3>
                 </div>
                 <div>
                   <h2> Make: Clint </h2>
@@ -144,7 +154,9 @@ function App() {
             <div className="flex-col tombstone ">
               <div className="flex-col items-center text-stone-800">
                 <div className="flex justify-center ">
-                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Pistol</h3>
+                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">
+                    Pistol
+                  </h3>
                 </div>
                 <div>
                   <h2> Make: John Wick</h2>
@@ -161,7 +173,9 @@ function App() {
             <div className="flex-col tombstone ">
               <div className="flex-col items-center text-emerald-900">
                 <div className="flex justify-center ">
-                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Pistol</h3>
+                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">
+                    Pistol
+                  </h3>
                 </div>
                 <div>
                   <h2> Make: R Lee</h2>
@@ -201,7 +215,9 @@ function App() {
             <div className="flex-col tombstone ">
               <div className="flex-col items-center text-pink-400">
                 <div className="flex justify-center ">
-                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">Bye - Bye</h3>
+                  <h3 className=" justify-center pb-4 text-2xl font-semibold ">
+                    Bye - Bye
+                  </h3>
                 </div>
                 <div>
                   <h2> Make: Zazzy Cat</h2>
@@ -227,7 +243,11 @@ function App() {
                   <h3> Caliber: {gun.caliber}</h3>
                   <h3> Price: ${gun.price}</h3>
                   <Edit handleUpdate={handleUpdate} gun={gun} />
-                  <button onClick={(event) => handleDelete(event, gun)} value={gun.id} className="text-red-900">
+                  <button
+                    onClick={(event) => handleDelete(event, gun)}
+                    value={gun.id}
+                    className="text-red-900"
+                  >
                     X
                   </button>
                 </div>
